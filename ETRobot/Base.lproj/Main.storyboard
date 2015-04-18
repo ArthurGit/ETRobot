@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekW-7G-epX" customClass="JSDPad">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="154" y="207" width="150" height="150"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ftN-tR-jS8"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9r-zL-b5G" customClass="JSButton">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="520" y="207" width="150" height="150"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JO-7L-QMc" customClass="JSButton">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="720" y="407" width="150" height="150"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gin-ul-EWj" customClass="JSButton">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="720" y="207" width="150" height="150"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIw-8L-aB7" customClass="JSButton">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="520" y="407" width="150" height="150"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzN-M4-y21" customClass="JSAnalogueStick">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="154" y="407" width="150" height="150"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iHK-tP-R7k"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ekW-7G-epX"/>
+                                <exclude reference="f9r-zL-b5G"/>
+                                <exclude reference="3JO-7L-QMc"/>
+                                <exclude reference="gin-ul-EWj"/>
+                                <exclude reference="nIw-8L-aB7"/>
+                                <exclude reference="IzN-M4-y21"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="ekW-7G-epX"/>
+                                <include reference="f9r-zL-b5G"/>
+                                <include reference="3JO-7L-QMc"/>
+                                <include reference="gin-ul-EWj"/>
+                                <include reference="nIw-8L-aB7"/>
+                                <include reference="IzN-M4-y21"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="aButton" destination="f9r-zL-b5G" id="X4s-gK-wCN"/>
+                        <outlet property="analogueStick" destination="IzN-M4-y21" id="1gz-zz-o2R"/>
+                        <outlet property="bButton" destination="gin-ul-EWj" id="bZl-aJ-f9s"/>
+                        <outlet property="cButton" destination="nIw-8L-aB7" id="SxV-fB-YFG"/>
+                        <outlet property="dButton" destination="3JO-7L-QMc" id="9as-U4-vUe"/>
+                        <outlet property="dPad" destination="ekW-7G-epX" id="3KB-nj-dk7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

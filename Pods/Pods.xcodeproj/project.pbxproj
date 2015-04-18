@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19357C0EE7144B0BB6DE7C1E /* YMSCBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B92689DEE06C68287BC1C9 /* YMSCBService.m */; };
+		34A1AB3EF14E466548F7798A /* YMSCBDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C5D920B3205D144A66BDD4 /* YMSCBDescriptor.h */; };
+		383DCA5728CE9D7B98EF3E06 /* YMSCBCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = F25598385233813A4431F748 /* YMSCBCharacteristic.m */; };
+		38D92D3AD5BCD6889EE8C7BE /* YMSCBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CD8FB405353E19941461FF /* YMSCBUtils.m */; };
+		461CDEA49CB4016EE362D834 /* NSMutableArray+fifoQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC9A3622541AC7B2FADBF8B /* NSMutableArray+fifoQueue.h */; };
+		61C547E684C5538C6E1C5393 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC3B1D31B95FD0104BB5CA /* Pods-dummy.m */; };
+		69CF1D7E983CA7C457191393 /* NSMutableArray+fifoQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 446B5E883BCCA1EC984E0C24 /* NSMutableArray+fifoQueue.m */; };
+		6E438E2F29D261AD2CDB7529 /* YMSCBCharacteristic.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2F64EC5049433C94B8E891 /* YMSCBCharacteristic.h */; };
+		6FD1992B0FD8316B42059688 /* YMSCBPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = 9159D2B4DE7CFCF9770FEBB4 /* YMSCBPeripheral.h */; };
+		96270754FE051A82D961145A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187353B40167BC3130CD6C8 /* Foundation.framework */; };
+		9654E3E3564AF6835A525FE0 /* YMSCBCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D21E47880F12A5843FC5EE /* YMSCBCentralManager.m */; };
+		9A44A4F7214924FE1363E353 /* YMSCBStoredPeripherals.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC18998BA85FF94CE186046 /* YMSCBStoredPeripherals.h */; };
+		B13B4D27F591E06C5A9258C4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5331BEB769EB44484E343CF2 /* CoreBluetooth.framework */; };
+		B15CFD2649CD29B3B7326824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187353B40167BC3130CD6C8 /* Foundation.framework */; };
+		BF527AA8CE8941E48E1E1D6D /* YMS128.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D5BD7F518D2E1E73F867CEE /* YMS128.c */; };
+		C750C6DB10A64E3F8AC90ED0 /* YMSCBService.h in Headers */ = {isa = PBXBuildFile; fileRef = DC860CD434E97382D53F3825 /* YMSCBService.h */; };
+		CA2E140EB76BAB2D7BD25551 /* YMSCBPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 337A5E1CF234A9C34C52BED5 /* YMSCBPeripheral.m */; };
+		CCFB32DF00D166F015EE33BC /* YMSCBStoredPeripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = 779115FB38B183BD89467844 /* YMSCBStoredPeripherals.m */; };
+		D2B2E256BD539A06BD7F093D /* YMS128.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F4F49467486BBF8F24EA95 /* YMS128.h */; };
+		D87F9EC6D3A97F209BC38D21 /* YMSCBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1840831D43C2BF118398B8 /* YMSCBUtils.h */; };
+		E144887EE494E60F841322DE /* YMSCBCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B25BFBCA35C6A281EE1DB56 /* YMSCBCentralManager.h */; };
+		E8AC4181A137EC598DB70361 /* Pods-YmsCoreBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 985DB648BBDA0C2EBED0C9EB /* Pods-YmsCoreBluetooth-dummy.m */; };
+		FDE8FDAB10672FBA3245E9CC /* YMSCBDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAAB49FFB18DA327993F62A /* YMSCBDescriptor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96F35DA2D76CBA4C6F753CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18FCFCA6B908EEC4A8A1E4FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9AA9EAF5D070794C592D5DF;
+			remoteInfo = "Pods-YmsCoreBluetooth";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01738ED64E8038D4BBC47125 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		04B074AC425101FA477A7570 /* Pods-YmsCoreBluetooth-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YmsCoreBluetooth-Private.xcconfig"; sourceTree = "<group>"; };
+		0D5BD7F518D2E1E73F867CEE /* YMS128.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = YMS128.c; path = YmsCoreBluetooth/YMS128.c; sourceTree = "<group>"; };
+		196278FE96CC94200285EF44 /* libPods-YmsCoreBluetooth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YmsCoreBluetooth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DBD0167C80D4873A154E5A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2F64EC5049433C94B8E891 /* YMSCBCharacteristic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCBCharacteristic.h; path = YmsCoreBluetooth/YMSCBCharacteristic.h; sourceTree = "<group>"; };
+		28CD8FB405353E19941461FF /* YMSCBUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCBUtils.m; path = YmsCoreBluetooth/YMSCBUtils.m; sourceTree = "<group>"; };
+		337A5E1CF234A9C34C52BED5 /* YMSCBPeripheral.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCBPeripheral.m; path = YmsCoreBluetooth/YMSCBPeripheral.m; sourceTree = "<group>"; };
+		38D30F64B99A7EA82F5E3998 /* Pods-YmsCoreBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YmsCoreBluetooth.xcconfig"; sourceTree = "<group>"; };
+		446B5E883BCCA1EC984E0C24 /* NSMutableArray+fifoQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+fifoQueue.m"; path = "YmsCoreBluetooth/NSMutableArray+fifoQueue.m"; sourceTree = "<group>"; };
+		451B9CDF2293EF20CC9CE4A1 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DC18998BA85FF94CE186046 /* YMSCBStoredPeripherals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCBStoredPeripherals.h; path = YmsCoreBluetooth/YMSCBStoredPeripherals.h; sourceTree = "<group>"; };
+		5331BEB769EB44484E343CF2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		54D21E47880F12A5843FC5EE /* YMSCBCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCBCentralManager.m; path = YmsCoreBluetooth/YMSCBCentralManager.m; sourceTree = "<group>"; };
+		5BAAB49FFB18DA327993F62A /* YMSCBDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCBDescriptor.m; path = YmsCoreBluetooth/YMSCBDescriptor.m; sourceTree = "<group>"; };
+		66C5D920B3205D144A66BDD4 /* YMSCBDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCBDescriptor.h; path = YmsCoreBluetooth/YMSCBDescriptor.h; sourceTree = "<group>"; };
+		779115FB38B183BD89467844 /* YMSCBStoredPeripherals.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCBStoredPeripherals.m; path = YmsCoreBluetooth/YMSCBStoredPeripherals.m; sourceTree = "<group>"; };
+		86B92689DEE06C68287BC1C9 /* YMSCBService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCBService.m; path = YmsCoreBluetooth/YMSCBService.m; sourceTree = "<group>"; };
+		8B25BFBCA35C6A281EE1DB56 /* YMSCBCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCBCentralManager.h; path = YmsCoreBluetooth/YMSCBCentralManager.h; sourceTree = "<group>"; };
+		8BD52C0738B7D91E878BA002 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		8FCC3B1D31B95FD0104BB5CA /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		9159D2B4DE7CFCF9770FEBB4 /* YMSCBPeripheral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCBPeripheral.h; path = YmsCoreBluetooth/YMSCBPeripheral.h; sourceTree = "<group>"; };
+		985DB648BBDA0C2EBED0C9EB /* Pods-YmsCoreBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YmsCoreBluetooth-dummy.m"; sourceTree = "<group>"; };
+		B07DCF375A2A5E726960B899 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8BC3A6A28462E66A9462BB9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		BBC9A3622541AC7B2FADBF8B /* NSMutableArray+fifoQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+fifoQueue.h"; path = "YmsCoreBluetooth/NSMutableArray+fifoQueue.h"; sourceTree = "<group>"; };
+		C200CCFB54049863DF26D90F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC860CD434E97382D53F3825 /* YMSCBService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCBService.h; path = YmsCoreBluetooth/YMSCBService.h; sourceTree = "<group>"; };
+		E00E01541F47A5DDA03E87FA /* Pods-YmsCoreBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YmsCoreBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		E187353B40167BC3130CD6C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F25598385233813A4431F748 /* YMSCBCharacteristic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCBCharacteristic.m; path = YmsCoreBluetooth/YMSCBCharacteristic.m; sourceTree = "<group>"; };
+		F2F4F49467486BBF8F24EA95 /* YMS128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMS128.h; path = YmsCoreBluetooth/YMS128.h; sourceTree = "<group>"; };
+		F380C56DEFDBD1C00FDB86DF /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		FE1840831D43C2BF118398B8 /* YMSCBUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCBUtils.h; path = YmsCoreBluetooth/YMSCBUtils.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F5E5E0EE8605EDB4F5EFC19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13B4D27F591E06C5A9258C4 /* CoreBluetooth.framework in Frameworks */,
+				B15CFD2649CD29B3B7326824 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A81F009B2139BA369D5E1C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96270754FE051A82D961145A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2611E8111E1740FE06A23CF6 = {
+			isa = PBXGroup;
+			children = (
+				C200CCFB54049863DF26D90F /* Podfile */,
+				47886DD7DA1F9551D551D548 /* Frameworks */,
+				30F3E3D90603874FE873F1EA /* Pods */,
+				3DAADAAE1E96DDBEBC159D67 /* Products */,
+				B18A4BC2C7CD1AA1DC9CA34C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		27D7F47FC7F2DF76B9C9AC06 /* YmsCoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				BBC9A3622541AC7B2FADBF8B /* NSMutableArray+fifoQueue.h */,
+				446B5E883BCCA1EC984E0C24 /* NSMutableArray+fifoQueue.m */,
+				0D5BD7F518D2E1E73F867CEE /* YMS128.c */,
+				F2F4F49467486BBF8F24EA95 /* YMS128.h */,
+				8B25BFBCA35C6A281EE1DB56 /* YMSCBCentralManager.h */,
+				54D21E47880F12A5843FC5EE /* YMSCBCentralManager.m */,
+				1A2F64EC5049433C94B8E891 /* YMSCBCharacteristic.h */,
+				F25598385233813A4431F748 /* YMSCBCharacteristic.m */,
+				66C5D920B3205D144A66BDD4 /* YMSCBDescriptor.h */,
+				5BAAB49FFB18DA327993F62A /* YMSCBDescriptor.m */,
+				9159D2B4DE7CFCF9770FEBB4 /* YMSCBPeripheral.h */,
+				337A5E1CF234A9C34C52BED5 /* YMSCBPeripheral.m */,
+				DC860CD434E97382D53F3825 /* YMSCBService.h */,
+				86B92689DEE06C68287BC1C9 /* YMSCBService.m */,
+				4DC18998BA85FF94CE186046 /* YMSCBStoredPeripherals.h */,
+				779115FB38B183BD89467844 /* YMSCBStoredPeripherals.m */,
+				FE1840831D43C2BF118398B8 /* YMSCBUtils.h */,
+				28CD8FB405353E19941461FF /* YMSCBUtils.m */,
+				6FE1B967CE5696E8E70CC288 /* Support Files */,
+			);
+			path = YmsCoreBluetooth;
+			sourceTree = "<group>";
+		};
+		30F3E3D90603874FE873F1EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27D7F47FC7F2DF76B9C9AC06 /* YmsCoreBluetooth */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DAADAAE1E96DDBEBC159D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19DBD0167C80D4873A154E5A /* libPods.a */,
+				196278FE96CC94200285EF44 /* libPods-YmsCoreBluetooth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		443C70E70AD0FAFAF83A2E75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B07DCF375A2A5E726960B899 /* Pods-acknowledgements.markdown */,
+				451B9CDF2293EF20CC9CE4A1 /* Pods-acknowledgements.plist */,
+				8FCC3B1D31B95FD0104BB5CA /* Pods-dummy.m */,
+				01738ED64E8038D4BBC47125 /* Pods-environment.h */,
+				F380C56DEFDBD1C00FDB86DF /* Pods-resources.sh */,
+				B8BC3A6A28462E66A9462BB9 /* Pods.debug.xcconfig */,
+				8BD52C0738B7D91E878BA002 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		47886DD7DA1F9551D551D548 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE79642F05E57992115FB96 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DE79642F05E57992115FB96 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5331BEB769EB44484E343CF2 /* CoreBluetooth.framework */,
+				E187353B40167BC3130CD6C8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6FE1B967CE5696E8E70CC288 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D30F64B99A7EA82F5E3998 /* Pods-YmsCoreBluetooth.xcconfig */,
+				04B074AC425101FA477A7570 /* Pods-YmsCoreBluetooth-Private.xcconfig */,
+				985DB648BBDA0C2EBED0C9EB /* Pods-YmsCoreBluetooth-dummy.m */,
+				E00E01541F47A5DDA03E87FA /* Pods-YmsCoreBluetooth-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-YmsCoreBluetooth";
+			sourceTree = "<group>";
+		};
+		B18A4BC2C7CD1AA1DC9CA34C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				443C70E70AD0FAFAF83A2E75 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3660CEFE82E80F09BEC0186A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461CDEA49CB4016EE362D834 /* NSMutableArray+fifoQueue.h in Headers */,
+				D2B2E256BD539A06BD7F093D /* YMS128.h in Headers */,
+				E144887EE494E60F841322DE /* YMSCBCentralManager.h in Headers */,
+				6E438E2F29D261AD2CDB7529 /* YMSCBCharacteristic.h in Headers */,
+				34A1AB3EF14E466548F7798A /* YMSCBDescriptor.h in Headers */,
+				6FD1992B0FD8316B42059688 /* YMSCBPeripheral.h in Headers */,
+				C750C6DB10A64E3F8AC90ED0 /* YMSCBService.h in Headers */,
+				9A44A4F7214924FE1363E353 /* YMSCBStoredPeripherals.h in Headers */,
+				D87F9EC6D3A97F209BC38D21 /* YMSCBUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B98B0B7F9085AE71F5FF00F /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DFE3899ADECE0AB73762702 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				647E1206C33C0BAF777BF66D /* Sources */,
+				4A81F009B2139BA369D5E1C6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91470A435350CE6BA01EC7DE /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 19DBD0167C80D4873A154E5A /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E9AA9EAF5D070794C592D5DF /* Pods-YmsCoreBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E4F1BE3FDA91B77DD06BD2B /* Build configuration list for PBXNativeTarget "Pods-YmsCoreBluetooth" */;
+			buildPhases = (
+				692792D5AF6E86981A607BB2 /* Sources */,
+				0F5E5E0EE8605EDB4F5EFC19 /* Frameworks */,
+				3660CEFE82E80F09BEC0186A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-YmsCoreBluetooth";
+			productName = "Pods-YmsCoreBluetooth";
+			productReference = 196278FE96CC94200285EF44 /* libPods-YmsCoreBluetooth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18FCFCA6B908EEC4A8A1E4FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 8150C34C823FE295D4C7DA43 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2611E8111E1740FE06A23CF6;
+			productRefGroup = 3DAADAAE1E96DDBEBC159D67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B98B0B7F9085AE71F5FF00F /* Pods */,
+				E9AA9EAF5D070794C592D5DF /* Pods-YmsCoreBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		647E1206C33C0BAF777BF66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C547E684C5538C6E1C5393 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		692792D5AF6E86981A607BB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CF1D7E983CA7C457191393 /* NSMutableArray+fifoQueue.m in Sources */,
+				E8AC4181A137EC598DB70361 /* Pods-YmsCoreBluetooth-dummy.m in Sources */,
+				BF527AA8CE8941E48E1E1D6D /* YMS128.c in Sources */,
+				9654E3E3564AF6835A525FE0 /* YMSCBCentralManager.m in Sources */,
+				383DCA5728CE9D7B98EF3E06 /* YMSCBCharacteristic.m in Sources */,
+				FDE8FDAB10672FBA3245E9CC /* YMSCBDescriptor.m in Sources */,
+				CA2E140EB76BAB2D7BD25551 /* YMSCBPeripheral.m in Sources */,
+				19357C0EE7144B0BB6DE7C1E /* YMSCBService.m in Sources */,
+				CCFB32DF00D166F015EE33BC /* YMSCBStoredPeripherals.m in Sources */,
+				38D92D3AD5BCD6889EE8C7BE /* YMSCBUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91470A435350CE6BA01EC7DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YmsCoreBluetooth";
+			target = E9AA9EAF5D070794C592D5DF /* Pods-YmsCoreBluetooth */;
+			targetProxy = 96F35DA2D76CBA4C6F753CAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D0975ED02BB3EF356163E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1A9E51521A2EEA41DFB26F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B074AC425101FA477A7570 /* Pods-YmsCoreBluetooth-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YmsCoreBluetooth/Pods-YmsCoreBluetooth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2A9CFE6D3F2392949B71DA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B074AC425101FA477A7570 /* Pods-YmsCoreBluetooth-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YmsCoreBluetooth/Pods-YmsCoreBluetooth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		48C9D4D23D043F4E9493A08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BC3A6A28462E66A9462BB9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9C92EBBE7B80C60D635311EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8C748B177F03D8A4FA1C96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD52C0738B7D91E878BA002 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8150C34C823FE295D4C7DA43 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D0975ED02BB3EF356163E4B /* Debug */,
+				9C92EBBE7B80C60D635311EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DFE3899ADECE0AB73762702 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C9D4D23D043F4E9493A08E /* Debug */,
+				E8C748B177F03D8A4FA1C96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E4F1BE3FDA91B77DD06BD2B /* Build configuration list for PBXNativeTarget "Pods-YmsCoreBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9CFE6D3F2392949B71DA55 /* Debug */,
+				1A9E51521A2EEA41DFB26F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18FCFCA6B908EEC4A8A1E4FB /* Project object */;
+}
